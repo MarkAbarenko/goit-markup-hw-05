@@ -117,7 +117,7 @@ body {
   content: "";
   height: 4px;
   width: 100%;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   background: #2196f3;
   border-radius: 2px;
@@ -368,9 +368,10 @@ body {
   background-color: var(--primary-bt-color);
   border-radius: 50%;
   display: flex;
+  color: rgba(175, 177, 184, 1);
   align-items: center;
   justify-content: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc-link:hover,
@@ -383,7 +384,7 @@ body {
 }
 
 .soc-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .position {
   font-size: 16px;
@@ -460,6 +461,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
   padding-top: 60px;
@@ -579,6 +581,7 @@ body {
 .portfolio-list .link {
   text-decoration: none;
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-text-wrap {
   position: relative;
@@ -639,7 +642,8 @@ body {
   cursor: pointer;
   text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portf:focus,
 .button-portf:hover {
